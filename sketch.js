@@ -1,15 +1,26 @@
+let current_colour;
+    
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(220);
-  fill(40);
+  current_colour = color(200,0,0);
+  background(0);
   noStroke();
 }
 
-function draw() { 
-    if (mouseIsPressed && (mouseButton==LEFT)) {
-      fill(mouseX/2,mouseY/2,255);
-      ellipse(mouseX,mouseY,mouseX/5,mouseY/5);
-      
-    } 
+function draw() {
+  fill(current_colour);
+  let mouseSpeed = abs(sqrt((mouseX - pmouseX)*(mouseX - pmouseX)+(mouseY - pmouseY)*(mouseY - pmouseY)));
+  if (mouseIsPressed) {
+    ellipse(mouseX,mouseY,abs(50-5*mouseSpeed));
+    if (mouseButton === RIGHT) {
+      background(0);
+    }
   }
+}
 
+
+
+/*
+function mouseReleased(){
+  current_colour = color(200,0,0);
+} */
