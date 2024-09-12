@@ -9,6 +9,9 @@ function setup() {
   textFont('Courier New');
   textSize(12);
   text('Left button to draw.\nRight click to clear.',windowWidth/32,windowHeight/16);
+  document.oncontextmenu = function() {
+    return false;
+}
 }
 
 function draw() {
