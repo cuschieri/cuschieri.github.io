@@ -5,7 +5,7 @@ function setup() {
   current_colour = color(200,0,0);
   background(0);
   noStroke();
-  fill(255,255,255);
+  fill(255,255,0);
   textFont('Courier New');
   textSize(12);
   text('Left button to draw.\nRight click to clear.',windowWidth/32,windowHeight/16);
