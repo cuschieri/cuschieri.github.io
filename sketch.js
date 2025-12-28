@@ -2,7 +2,7 @@ let current_colour;
     
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  current_colour = color(200,0,0);
+  current_colour = color(200,100,0);
   background(0);
   noStroke();
   fill(255,255,0);
