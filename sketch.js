@@ -23,7 +23,7 @@ function draw() {
     if (mouseButton === RIGHT) {
       background(0);
     noStroke();
-    fill(255,255,255);
+    fill(255,0,255);
     textFont('Courier New');
     textSize(12);
     text('Left button to draw.\nRight click to clear.',windowWidth/32,windowHeight/16);
